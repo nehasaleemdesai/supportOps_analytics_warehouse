@@ -1,0 +1,11 @@
+org_id,org_name,industry,plan,country,created_at,updated_at
+1001,UrbanGrid LLC,HealthTech,Pro,AE,2024-12-04 15:12:26,2025-06-21 05:17:48
+1002,GreenPulse LLC,EdTech,Standard,SG,2025-01-08 09:38:58,2025-02-26 15:56:23
+1003,MetroLynx Corp,Gaming,Standard,AU,2024-12-11 12:13:04,2025-07-09 06:16:27
+1004,MetroLynx Systems,EdTech,Standard,AE,2025-01-21 07:23:27,2025-05-19 22:30:26
+1005,Solaris Corp,E-commerce,Pro,SG,2024-12-10 02:09:49,2025-04-04 00:47:25
+1006,QuantaSoft Inc,FinTech,Standard,AU,2024-12-29 17:40:52,2025-06-28 08:06:26
+1007,SwiftMart Ltd,EdTech,Free,US,2025-01-09 08:46:39,2025-06-18 01:12:36
+1008,GreenPulse Corp,FinTech,Standard,DE,2025-02-14 22:21:55,2025-04-15 16:13:14
+1009,DataForge Corp,E-commerce,Pro,US,2024-12-11 22:06:28,2025-06-22 22:09:06
+1010,GreenPulse Ltd,E-commerce,Standard,AU,2024-12-15 20:58:34,2025-03-26 07:44:24

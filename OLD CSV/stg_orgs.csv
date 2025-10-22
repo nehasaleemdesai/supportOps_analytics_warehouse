@@ -1,0 +1,11 @@
+org_id,org_name,industry,plan,country,created_at,updated_at
+1001,Acme Co 1,FinTech,Pro,IN,2025-01-24 15:41:58,2025-03-28 01:50:57
+1002,Acme Co 2,Gaming,Pro,US,2024-12-06 12:01:14,2025-05-09 19:09:01
+1003,Acme Co 3,EdTech,Free,US,2024-12-26 12:03:22,2025-02-27 10:53:33
+1004,Acme Co 4,Gaming,Enterprise,AE,2024-12-22 08:33:52,2025-03-25 03:02:36
+1005,Acme Co 5,Gaming,Pro,AE,2025-02-01 10:01:29,2025-05-31 07:59:12
+1006,Acme Co 6,E‑commerce,Standard,UK,2025-01-27 15:15:46,2025-05-15 16:42:38
+1007,Acme Co 7,EdTech,Standard,IN,2025-02-13 20:59:05,2025-03-28 08:17:44
+1008,Acme Co 8,EdTech,Standard,IN,2024-12-11 10:55:21,2025-05-22 07:12:50
+1009,Acme Co 9,EdTech,Standard,DE,2025-01-07 06:05:23,2025-06-24 02:31:23
+1010,Acme Co 10,Gaming,Pro,DE,2024-12-06 21:12:38,2025-02-24 11:14:22

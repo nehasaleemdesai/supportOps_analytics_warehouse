@@ -1,0 +1,7 @@
+release_id,version,component,deployed_at,notes
+3001,v2.1,Billing,2025-07-22 12:00:00,Release notes for v2.1
+3002,v2.2,API,2025-08-06 12:00:00,Release notes for v2.2
+3003,v2.3,Auth,2025-08-21 12:00:00,Release notes for v2.3
+3004,v2.4,Reporting,2025-09-05 12:00:00,Release notes for v2.4
+3005,v2.5,Auth,2025-09-20 12:00:00,Release notes for v2.5
+3006,v2.6,Auth,2025-10-05 12:00:00,Release notes for v2.6
