@@ -134,3 +134,42 @@ SELECT COUNT(*) AS bad_orgs
 FROM fact_tickets t LEFT JOIN dim_org o ON t.org_id = o.org_id
 WHERE o.org_id IS NULL;
 		
+// CREATING dim_article after cleaning stg_articles
+SELECT * FROM stg_articles;
+
+DROP TABLE IF EXISTS dim_article;
+CREATE TABLE dim_article AS
+SELECT DISTINCT (article_id)
+	article_id,
+	NULLIF(TRIM(title), ' ') AS title,
+	INITCAP(TRIM(category)) AS category,
+	TRIM(url) AS url,
+	published_date,
+	updated_at,
+	COALESCE(updated_at, published_date) AS last_modified_at
+FROM stg_articles
+ORDER BY article_id, 
+COALESCE(updated_at, published_at) DESC NULLS LAST;
+
+// creating fact_web_events table after cleaning staging table
+SELECT * FROM stg_web_events;
+
+DROP TABLE IF EXISTS fact_web_events;
+CREATE TABLE fact_web_events AS
+SELECT DISTINCT (event_id)
+	event_id,
+	user_id,
+	article_id,
+	TRIM(session_id) AS session_id,
+	CASE LOWER(TRIM(event_type)) 
+		WHEN 'article_view' THEN 'article_view'
+		WHEN 'page_view' THEN 'page_view'
+		WHEN 'create_ticket_click' THEN 'create_ticket_click'
+		ELSE 'other'
+		END AS event_type,
+	TRIM(url) AS url,
+	occurred_at
+FROM stg_web_events
+WHERE user_id IN (SELECT user_id FROM dim_user)
+AND (article_id IS NULL OR article_id IN (SELECT article_id FROM dim_article))
+ORDER BY event_id, occurred_at DESC NULLS LAST;
